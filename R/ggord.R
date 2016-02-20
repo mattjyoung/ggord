@@ -205,7 +205,7 @@ ggord.default <- function(obs, vecs, axes = c('1', '2'), addpts = NULL, obslab =
       p <- p + geom_text(label = row.names(obs), size = size, alpha = alpha)
   } else {
     if(!is.null(obs$Groups))
-      p <- p + geom_point(aes_string(colour = 'Groups'), size = size, alpha = alpha)
+      p <- p + geom_point(aes_string(colour = 'Groups', shape='Groups'), size = size, alpha = alpha)
     else
       p <- p + geom_point(size = size, alpha = alpha)
   }
