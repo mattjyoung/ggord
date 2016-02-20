@@ -250,7 +250,7 @@ ggord.default <- function(obs, vecs, axes = c('1', '2'), addpts = NULL, obslab =
     })
     names(ell)[2:3] <- c('one', 'two')
 
-    p <- p + geom_path(data = ell, aes_string(color = 'Groups', linetype='Groups', group = 'Groups'), alpha = alpha)
+    p <- p + geom_path(data = ell, aes_string(color = 'Groups', group = 'Groups'), alpha = alpha)
 
   }
 
